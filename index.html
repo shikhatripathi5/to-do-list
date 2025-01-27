@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+<div class="container">
+    <div class="todo-app">
+        <div class="header">
+            <h2>To-Do List <img src="https://cdn.pixabay.com/photo/2016/03/31/19/50/checklist-1295319_1280.png" alt="App Icon"></h2>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+        </div>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add your text">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container" class="draggable-list">
+        </ul>
+        <div class="buttons">
+            <button onclick="clearAllTasks()">Clear All</button>
+        </div>
+    </div>
+</div>
+<script src="s.js"></script>
+</body>
+</html>
